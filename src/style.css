@@ -12,14 +12,12 @@ h1 {
   font-weight: 700;
 }
 #current-location {
-  padding: 5px 15px;
   font-size: 9px;
-  margin-left: 50px;
-  margin-top: -15px;
-  margin-bottom: 12px;
+  margin-left: 30px;
   background-color: #66ede9;
   font-weight: 500;
   border-radius: 4px;
+  width: 70px;
 }
 #current-location:hover {
   cursor: pointer;
@@ -31,14 +29,14 @@ h1 {
   border-color: #66ede9;
   width: 100%;
   font-size: 16px;
-  margin-left: 75px;
+  margin-left: 15px;
   padding: 8px;
   margin-top: 0;
 }
 .search-icon {
   display: block;
   position: relative;
-  margin-left: 265px;
+  margin-left: 210px;
   margin-top: -32px;
   font-size: 12px;
   padding: auto auto auto 0;
@@ -145,4 +143,9 @@ h1 {
 .time {
   text-align: right;
   font-size: 14px;
+}
+.code-link {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
 }

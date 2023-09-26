@@ -1,7 +1,11 @@
 function displayTemp(response) {
+  console.log(response);
   let temp = Math.round(response.data.main.temp);
   let currentTemp = document.querySelector("#current-temp");
   currentTemp.innerHTML = temp;
+  let cityElement = document.querySelector("h1");
+  let city = response.data.name;
+  cityElement.innerHTML = `${city}`;
   let description = response.data.weather[0].description;
   let currentDescription = document.querySelector("#current-description");
   currentDescription.innerHTML = description;
