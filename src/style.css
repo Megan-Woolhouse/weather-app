@@ -1,0 +1,148 @@
+.container {
+  padding: 20px 35px 20px 20px;
+  border: solid 4px rgb(0, 0, 0, 0.5);
+  margin-top: 40px;
+  max-width: 650px;
+}
+h1 {
+  text-align: center;
+}
+.date {
+  text-align: center;
+  font-weight: 700;
+}
+#current-location {
+  padding: 5px 15px;
+  font-size: 9px;
+  margin-left: 50px;
+  margin-top: -15px;
+  margin-bottom: 12px;
+  background-color: #66ede9;
+  font-weight: 500;
+  border-radius: 4px;
+}
+#current-location:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #66ede9;
+}
+.search-bar {
+  border: 4px solid;
+  border-color: #66ede9;
+  width: 100%;
+  font-size: 16px;
+  margin-left: 75px;
+  padding: 8px;
+  margin-top: 0;
+}
+.search-icon {
+  display: block;
+  position: relative;
+  margin-left: 265px;
+  margin-top: -32px;
+  font-size: 12px;
+  padding: auto auto auto 0;
+  border: none;
+  background-color: #fff;
+}
+.times {
+  text-align: center;
+  color: rgb(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+.current-emoji {
+  font-size: 40px;
+  text-align: right;
+  padding: 20px 0 0 0;
+}
+.current {
+  font-size: 30px;
+  text-align: left;
+  padding: 20px 0 0 15px;
+  color: rgb(0, 0, 0, 0.5);
+  font-weight: 500;
+  line-height: 70%;
+}
+#current-description {
+  font-size: 18px;
+
+  line-height: 1.8;
+}
+.unit {
+  font-size: 12px;
+  vertical-align: top;
+  text-decoration: none;
+}
+.bar {
+  text-align: center;
+  background-color: #66ede9;
+  border: 1px #66ede9;
+  border-radius: 4px;
+  position: relative;
+  top: 40px;
+  padding: 50px 10px;
+}
+.five-am {
+  padding: 30px 10px;
+  top: 50px;
+}
+.eight-am {
+  padding: 50px 10px;
+  top: 10px;
+}
+.eleven-am {
+  padding: 70px 10px;
+  top: -30px;
+}
+.two-pm {
+  padding: 70px 10px;
+  top: -30px;
+}
+.five-pm {
+  padding: 60px 10px;
+  top: -10px;
+}
+.eight-pm {
+  padding: 55px 10px;
+  top: 0px;
+}
+.eleven-pm {
+  padding: 40px 10px;
+  top: 30px;
+}
+.days {
+  font-size: 16px;
+  text-align: center;
+  padding-right: 0;
+  padding-left: 25px;
+  color: rgb(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+.tue {
+  padding-left: 50px;
+}
+.thu {
+  padding-right: 20px;
+  margin-left: -10px;
+}
+.fri {
+  padding-right: 20px;
+  margin-left: -20px;
+}
+.daily-emojis {
+  font-size: 40px;
+  text-align: center;
+  color: rgb(0, 0, 0, 1);
+}
+.sunrise-sunset {
+  text-align: left;
+  border: 3px solid #66ede9;
+  padding: 3px 7px;
+  margin-left: 30px;
+  color: rgb(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+.time {
+  text-align: right;
+  font-size: 14px;
+}
