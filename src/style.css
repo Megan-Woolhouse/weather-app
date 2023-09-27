@@ -71,6 +71,16 @@ h1 {
   vertical-align: top;
   text-decoration: none;
 }
+.unit:hover {
+  text-decoration: underline;
+}
+.selected {
+  color: black;
+  cursor: default;
+}
+.selected:hover {
+  text-decoration: none;
+}
 .bar {
   text-align: center;
   background-color: #66ede9;
