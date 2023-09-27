@@ -10,20 +10,10 @@ function displayTemp(response) {
   let currentDescription = document.querySelector("#current-description");
   currentDescription.innerHTML = description;
   let currentEmoji = document.querySelector("#current-emoji");
-  console.log(currentEmoji);
-  if (description.includes("clouds")) {
-    currentEmoji.innerHTML = "⛅";
-  } else if (description === "overcast clouds") {
-    currentEmoji.innerHTML = "☁️";
-  } else if (description.includes("clear")) {
-    currentEmoji.innerHTML = "☀️";
-  } else if (description.includes("rain")) {
-    currentEmoji.innerHTML = "🌧️";
-  } else if (description.includes("drizzle")) {
-    currentEmoji.innerHTML = "🌧️";
-  } else if (description.includes("mist")) {
-    currentEmoji.innerHTML = "☁️";
-  }
+  currentEmoji.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function searchCity(event) {
