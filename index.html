@@ -47,19 +47,14 @@
           8th <br />
           September
         </div>
-        <div class="col-1 times">5am</div>
-        <div class="col-1 times">8am</div>
-        <div class="col-1 times">11am</div>
-        <div class="col-1 times">2pm</div>
-        <div class="col-1 times">5pm</div>
-        <div class="col-1 times">8pm</div>
-        <div class="col-1 times">11pm</div>
+        <div class="col-7"></div>
 
         <div class="col-2 current-emoji">
           <img
             src="https://openweathermap.org/img/wn/10d@2x.png"
             alt="Weather-icon"
             id="current-emoji"
+            class="current-emoji"
           />
         </div>
         <div class="col-3 current">
@@ -72,52 +67,16 @@
           <span id="current-description">heavy intensity shower rain</span>
         </div>
 
-        <div class="col-1">
-          <div class="bar five-am"></div>
-        </div>
-        <div class="col-1">
-          <div class="bar eight-am"></div>
-        </div>
-        <div class="col-1">
-          <div class="bar eleven-am"></div>
-        </div>
-        <div class="col-1">
-          <div class="bar two-pm"></div>
-        </div>
-        <div class="col-1">
-          <div class="bar five-pm"></div>
-        </div>
-        <div class="col-1">
-          <div class="bar eight-pm"></div>
-        </div>
-        <div class="col-1">
-          <div class="bar eleven-pm"></div>
+        <div class="col-3 wind-humidity">
+          <p id="wind-speed">Wind Speed:</p>
+          <p id="humidity">Humidity:</p>
         </div>
 
-        <div class="col-1 days">
-          Mon <br />27°C <br /><span class="daily-emojis">⛅</span>
-        </div>
-        <div class="col-2 days tue">
-          Tue <br />29°C <br />
-          <div class="daily-emojis">☀️</div>
-        </div>
-        <div class="col-2 days">
-          Wed <br />30°C <br />
-          <div class="daily-emojis">☀️</div>
-        </div>
-        <div class="col-2 days thu">
-          Thu <br />30°C <br />
-          <div class="daily-emojis">☀️</div>
-        </div>
-        <div class="col-2 days fri">
-          Fri <br />23°C <br />
-          <div class="daily-emojis">⛅</div>
-        </div>
         <div class="col-3 sunrise-sunset">
           Sunrise
-          <div class="time">06:28</div>
+          <div class="time" id="rise-time">06:28</div>
           <br />Sunset
-          <div class="time">19:36</div>
+          <div class="time" id="set-time">19:36</div>
         </div>
       </div>
     </div>
@@ -127,6 +86,7 @@
       >
       by Megan Woolhouse
     </p>
+
     <script src="src/index.js"></script>
   </body>
 </html>

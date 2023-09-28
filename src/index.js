@@ -37,7 +37,19 @@ function displayTemp(response) {
   let description = response.data.weather[0].description;
   let currentDescription = document.querySelector("#current-description");
   let currentEmoji = document.querySelector("#current-emoji");
+  let windSpeedElement = document.querySelector("#wind-speed");
+  let humidityElement = document.querySelector("#humidity");
+  let windSpeed = Math.round(response.data.wind.speed);
+  let humidity = response.data.main.humidity;
+  let sunriseElement = document.querySelector("#rise-time");
+  let sunsetElement = document.querySelector("#set-time");
 
+  let riseTime = new Date(response.data.sys.sunrise * 1000);
+  let riseHour = riseTime.getHours();
+  let riseMinutes = "0" + riseTime.getMinutes();
+  let setTime = new Date(response.data.sys.sunset * 1000);
+  let setHour = setTime.getHours();
+  let setMinutes = "0" + setTime.getMinutes();
   currentTemp.innerHTML = celsiusTemperature;
   cityElement.innerHTML = `${city}`;
   currentDescription.innerHTML = description;
@@ -45,6 +57,10 @@ function displayTemp(response) {
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  windSpeedElement.innerHTML = `Wind Speed: ${windSpeed} km/h`;
+  humidityElement.innerHTML = `Humidity: ${humidity}%`;
+  sunriseElement.innerHTML = `${riseHour}:${riseMinutes.substr(-2)}`;
+  sunsetElement.innerHTML = `${setHour}:${setMinutes.substr(-2)}`;
 }
 
 function searchCity(city) {

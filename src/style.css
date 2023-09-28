@@ -43,15 +43,11 @@ h1 {
   border: none;
   background-color: #fff;
 }
-.times {
-  text-align: center;
-  color: rgb(0, 0, 0, 0.5);
-  font-weight: 500;
-}
+
 .current-emoji {
-  font-size: 40px;
-  text-align: right;
-  padding: 20px 0 0 0;
+  width: 90px;
+  margin-top: 0;
+  padding: 0;
 }
 .current {
   font-size: 30px;
@@ -81,74 +77,20 @@ h1 {
 .selected:hover {
   text-decoration: none;
 }
-.bar {
-  text-align: center;
-  background-color: #66ede9;
-  border: 1px #66ede9;
-  border-radius: 4px;
-  position: relative;
-  top: 40px;
-  padding: 50px 10px;
-}
-.five-am {
-  padding: 30px 10px;
-  top: 50px;
-}
-.eight-am {
-  padding: 50px 10px;
-  top: 10px;
-}
-.eleven-am {
-  padding: 70px 10px;
-  top: -30px;
-}
-.two-pm {
-  padding: 70px 10px;
-  top: -30px;
-}
-.five-pm {
-  padding: 60px 10px;
-  top: -10px;
-}
-.eight-pm {
-  padding: 55px 10px;
-  top: 0px;
-}
-.eleven-pm {
-  padding: 40px 10px;
-  top: 30px;
-}
-.days {
-  font-size: 16px;
-  text-align: center;
-  padding-right: 0;
-  padding-left: 25px;
+.wind-humidity {
+  font-size: 12px;
+  line-height: 0.5;
   color: rgb(0, 0, 0, 0.5);
-  font-weight: 500;
-}
-.tue {
-  padding-left: 50px;
-}
-.thu {
-  padding-right: 20px;
-  margin-left: -10px;
-}
-.fri {
-  padding-right: 20px;
-  margin-left: -20px;
-}
-.daily-emojis {
-  font-size: 40px;
-  text-align: center;
-  color: rgb(0, 0, 0, 1);
 }
 .sunrise-sunset {
   text-align: left;
   border: 3px solid #66ede9;
   padding: 3px 7px;
   margin-left: 30px;
+  margin-top: -20px;
   color: rgb(0, 0, 0, 0.5);
   font-weight: 500;
+  font-size: 14px;
 }
 .time {
   text-align: right;
