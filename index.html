@@ -48,50 +48,31 @@
           September
         </div>
         <div class="col-7"></div>
+        <div class="col-8">
+          <div class="current-emoji">
+            <img
+              src="https://openweathermap.org/img/wn/10d@2x.png"
+              alt="Weather-icon"
+              id="current-emoji"
+              class="current-emoji"
+            />
+          </div>
+          <span class="current">
+            <span id="current-temp"> 28 </span>
 
-        <div class="col-2 current-emoji">
-          <img
-            src="https://openweathermap.org/img/wn/10d@2x.png"
-            alt="Weather-icon"
-            id="current-emoji"
-            class="current-emoji"
-          />
+            <a href="#" class="unit selected" id="celsius">°C</a>
+            <span class="unit">|</span>
+            <a href="#" class="unit" id="fahrenheit">°F</a>
+            <div id="current-description">heavy intensity shower rain</div>
+          </span>
         </div>
-        <div class="col-3 current">
-          <span id="current-temp"> 28 </span>
 
-          <a href="#" class="unit selected" id="celsius">°C</a>
-          <span class="unit">|</span>
-          <a href="#" class="unit" id="fahrenheit">°F</a>
-          <br />
-          <span id="current-description">heavy intensity shower rain</span>
-        </div>
-
-        <div class="col-3 wind-humidity">
+        <div class="col-4 wind-humidity">
           <p id="wind-speed">Wind Speed:</p>
           <p id="humidity">Humidity:</p>
         </div>
-
-        <div class="col-3 sunrise-sunset">
-          Sunrise
-          <div class="time" id="rise-time">06:28</div>
-          <br />Sunset
-          <div class="time" id="set-time">19:36</div>
-        </div>
       </div>
-      <div class="forecast" id="forecast">
-        <div class="col-2">
-          <div>Sat</div>
-          <img
-            src="https://openweathermap.org/img/wn/04d@2x.png"
-            alt="weather-icon"
-            width="40px"
-          />
-          <div class="forecast-temps">
-            <span> 18° /</span> <span> 9° </span>
-          </div>
-        </div>
-      </div>
+      <div class="forecast" id="forecast"></div>
     </div>
     <p class="code-link">
       <a href="https://github.com/Megan-Woolhouse/weather-app"

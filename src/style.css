@@ -47,20 +47,24 @@ h1 {
 .current-emoji {
   width: 90px;
   margin-top: 0;
+  margin-left: 90px;
   padding: 0;
+  display: inline;
 }
 .current {
   font-size: 30px;
-  text-align: left;
-  padding: 20px 0 0 15px;
+  text-align: right;
+  padding: 20px 0 0 8px;
   color: rgb(0, 0, 0, 0.5);
   font-weight: 500;
   line-height: 70%;
 }
 #current-description {
   font-size: 18px;
-
-  line-height: 1.8;
+  text-align: right;
+  line-height: 1;
+  margin-top: -20px;
+  margin-right: 20px;
 }
 .unit {
   font-size: 12px;
@@ -81,6 +85,8 @@ h1 {
   font-size: 12px;
   line-height: 0.5;
   color: rgb(0, 0, 0, 0.5);
+  text-align: right;
+  margin-top: 30px;
 }
 .sunrise-sunset {
   text-align: left;
@@ -97,7 +103,7 @@ h1 {
   font-size: 12px;
 }
 .forecast {
-  margin-top: 25px;
+  margin-top: 50px;
   text-align: center;
   font-size: 16px;
   color: rgb(0, 0, 0, 0.5);
