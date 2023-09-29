@@ -87,14 +87,25 @@ h1 {
   border: 3px solid #66ede9;
   padding: 3px 7px;
   margin-left: 30px;
-  margin-top: -20px;
+  margin-top: -30px;
   color: rgb(0, 0, 0, 0.5);
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
 }
 .time {
   text-align: right;
-  font-size: 14px;
+  font-size: 12px;
+}
+.forecast {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 16px;
+  color: rgb(0, 0, 0, 0.5);
+  font-weight: 700;
+}
+.forecast-temps {
+  font-size: 13px;
+  font-weight: 500;
 }
 .code-link {
   font-size: 12px;

@@ -63,6 +63,14 @@ function displayTemp(response) {
   sunsetElement.innerHTML = `${setHour}:${setMinutes.substr(-2)}`;
 }
 
+function showPosition(position) {
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
+  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayTemp);
+}
+
 function searchCity(city) {
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
@@ -79,17 +87,10 @@ function citySelection(event) {
 let searchButton = document.querySelector("#search-city");
 searchButton.addEventListener("submit", citySelection);
 
-function showPosition(position) {
-  let lat = position.coords.latitude;
-  let lon = position.coords.longitude;
-  let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayTemp);
-}
-
 function navigate() {
   navigator.geolocation.getCurrentPosition(showPosition);
 }
+
 let currentLocationButton = document.querySelector("#current-location");
 currentLocationButton.addEventListener("click", navigate);
 
@@ -116,6 +117,32 @@ function switchToFahrenheit(event) {
 let fahrenheit = document.querySelector("#fahrenheit");
 fahrenheit.addEventListener("click", switchToFahrenheit);
 
+function displayForecast(day) {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sat", "Sun", "Mon", "Tue", "Wed", "Thu"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2">
+          <div>${day} </div>
+          <img
+            src="https://openweathermap.org/img/wn/04d@2x.png"
+            alt="weather-icon"
+            width="40px"
+          />
+          <div class="forecast-temps">
+            <span> 18° /</span> <span> 9° </span>
+          </div>
+        </div >`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let celsiusTemperature = null;
 
 searchCity("London");
+displayForecast();
