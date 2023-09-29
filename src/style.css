@@ -68,19 +68,11 @@ h1 {
 }
 .unit {
   font-size: 12px;
-  vertical-align: top;
+  vertical-align: middle;
   text-decoration: none;
+  display: inline;
 }
-.unit:hover {
-  text-decoration: underline;
-}
-.selected {
-  color: black;
-  cursor: default;
-}
-.selected:hover {
-  text-decoration: none;
-}
+
 .wind-humidity {
   font-size: 12px;
   line-height: 0.5;

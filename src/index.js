@@ -137,29 +137,6 @@ function navigate() {
 let currentLocationButton = document.querySelector("#current-location");
 currentLocationButton.addEventListener("click", navigate);
 
-function switchToCelsius(event) {
-  event.preventDefault();
-  let currentTemp = document.querySelector("#current-temp");
-  currentTemp.innerHTML = celsiusTemperature;
-  celsius.classList.add("selected");
-  fahrenheit.classList.remove("selected");
-}
-
-let celsius = document.querySelector("#celsius");
-celsius.addEventListener("click", switchToCelsius);
-
-function switchToFahrenheit(event) {
-  event.preventDefault();
-  let currentTemp = document.querySelector("#current-temp");
-  let fahrenheitTemp = Math.round((celsiusTemperature * 9) / 5 + 32);
-  currentTemp.innerHTML = fahrenheitTemp;
-  celsius.classList.remove("selected");
-  fahrenheit.classList.add("selected");
-}
-
-let fahrenheit = document.querySelector("#fahrenheit");
-fahrenheit.addEventListener("click", switchToFahrenheit);
-
 let celsiusTemperature = null;
 
 searchCity("London");
